@@ -7,7 +7,6 @@ import org.springframework.stereotype.Service;
 
 /**
  * Copyright:    Copyright (c) 2020
- * Company:      Crazy coding inc.
  *
  * @author Andrei 'cetekot' Larin
  * @version 1.0
@@ -15,7 +14,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class JokeService {
 
-    private JokeRepository repository;
+    private final JokeRepository repository;
 
     @Autowired
     public JokeService( JokeRepository repository ) {

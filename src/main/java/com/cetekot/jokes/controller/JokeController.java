@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
  * Copyright:    Copyright (c) 2020
- * Company:      Crazy coding inc.
  *
  * @author Andrei 'cetekot' Larin
  * @version 1.0
@@ -18,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping( value = "/" )
 public class JokeController {
 
-    private JokeService service;
+    private final JokeService service;
 
     @Autowired
     public JokeController( JokeService service ) {

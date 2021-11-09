@@ -5,7 +5,6 @@ import org.springframework.web.servlet.config.annotation.*;
 
 /**
  * Copyright:    Copyright (c) 2020
- * Company:      Crazy coding inc.
  *
  * @author Andrei 'cetekot' Larin
  * @version 1.0

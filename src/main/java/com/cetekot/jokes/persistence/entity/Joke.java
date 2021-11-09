@@ -1,17 +1,19 @@
 package com.cetekot.jokes.persistence.entity;
 
+import lombok.Data;
+
 import javax.persistence.*;
 import java.text.MessageFormat;
 
 /**
  * Copyright:    Copyright (c) 2020
- * Company:      Crazy coding inc.
  *
  * @author Andrei 'cetekot' Larin
  * @version 1.0
  */
 @Entity
 @Table( name = "jokes" )
+@Data
 public class Joke {
 
     @Id
@@ -21,26 +23,6 @@ public class Joke {
 
     @Column( name = "line", nullable = false )
     private String line;
-
-    public Long getId() {
-
-        return id;
-    }
-
-    public void setId( Long id ) {
-
-        this.id = id;
-    }
-
-    public String getLine() {
-
-        return line;
-    }
-
-    public void setLine( String line ) {
-
-        this.line = line;
-    }
 
     @Override
     public String toString() {

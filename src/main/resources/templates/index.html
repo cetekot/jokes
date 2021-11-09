@@ -1,11 +1,11 @@
 <!DOCTYPE HTML>
-    <html th:lang="${#locale.language}" xmlns:th="http://www.thymeleaf.org" lang="en">
+<html th:lang="${#locale.language}" xmlns:th="http://www.thymeleaf.org" lang="en">
     <head>
         <title>Random Chuck Norris joke.</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     </head>
 
-    <body class="common">
+    <body>
         <div><img src="/image/chuck_norris.png" alt="Chuck Norris' logo"/></div>
         <div>Today's random joke is: <span th:text="${line}"></span></div>
     </body>
